@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <form action="/result" method="POST">
+      <p>OverallQual 
+        <br> Rates the overall material and finish of the house </br>
+        <input type="range" name="OverallQual"
+               min="1" max="10"/>
+      </p>
+
+      <p>GrLivArea
+        <br> Above grade (ground) living area square feet </br>
+        <input type="number" name="GrLivArea"
+               min="0" max="50000" value="1464"/>
+      </p>
+
+      <p>GarageCars
+        <br> Size of garage in car capacity </br>
+        <input type="number" name="GarageCars"
+               min="0" max="100" value="2"/>
+      </p>
+
+      <p>GarageArea
+        <br> Size of garage in square feet </br>
+        <input type="number" name="GarageArea"
+               min="0" max="50000" value="480"/>
+      </p>
+
+      <p>TotalBsmtSF
+        <br> Total square feet of basement area </br>
+        <input type="number" name="TotalBsmtSF"
+               min="0" max="50000" value="991"/>
+      </p>
+
+      <p>1stFlrSF
+        <br> First Floor square feet </br>
+        <input type="number" name="1stFlrSF"
+               min="0" max="50000" value="1087"/>
+      </p>
+
+      <p>FullBath
+        <br> Full bathrooms above grade </br>
+        <input type="number" name="FullBath"
+               min="0" max="10" value="2"/>
+      </p>
+
+      <select name="LotShape" size="4">
+        <option value="Reg">Regular</option>
+        <option value="IR1" selected="selected">Slightly irregular</option>
+        <option value="IR2">Moderately Irregular</option>
+        <option value="IR3">Irregular</option>
+      </select>
+
+      <p><input type="submit" value="Submit"/></p>
+    </form>
+  </body>
+</html>
