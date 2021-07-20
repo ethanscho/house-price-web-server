@@ -12,6 +12,7 @@ from flask import Flask, render_template, request
 # load data
 X = pd.read_csv('model/X.csv')
 
+# open y
 with open('model/y.npy', 'rb') as f:
     y = np.load(f)
 
